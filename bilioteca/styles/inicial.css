@@ -1,0 +1,30 @@
+body{
+    background-color: blanchedalmond;
+}
+.container{
+
+    width: 100%;
+    height: 100vh;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Comprar{
+    position: absolute;
+    left: 75vh;
+    margin-top: -25vh;
+    color: darkseagreen;
+    background-color: rgb(76, 95, 76);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    height: 5vh;
+}
+#Titulo{
+    margin-top: -80vh;
+    font-size: 6vh;
+    font-family: 'Pangolin', cursive;
+
+}
