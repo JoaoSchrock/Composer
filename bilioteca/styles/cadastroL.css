@@ -6,14 +6,15 @@ body{
 .container{
     width: 100%;
     height: 100vh;
-     
+    overflow: hidden;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .label{
     flex-direction: column;
-    margin-top: -70vh;
+    margin-top: -80vh;
 }
 #Titulo{
     font-size: 15vh;
@@ -22,17 +23,24 @@ body{
     justify-content: center;
     font-family: 'Pangolin', cursive;
 }
-#Comprar{
+.botao{
     position: absolute;
-    left: 75vh;
-    margin-top: -50vh;
     color: darkseagreen;
     background-color: rgb(76, 95, 76);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vh;
     
+
+    margin-top: 5vh;
+    color: darkseagreen;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 50vh;
+    padding: 8px 2px;
+    border: none;
+    outline: none;
+    left: 75vh;
 }
 
 

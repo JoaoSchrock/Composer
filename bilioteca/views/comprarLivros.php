@@ -1,4 +1,9 @@
 <?php
+include('../database/conexao.php');
+
+$viewsLivros = $conn->prepare('SELECT * FROM livros');
+$viewsLivros->execute();
+$rowTable = $viewsLivros ->fetchAll();
  ?>
 <!DOCTYPE html>
 <html lang="pt-br">

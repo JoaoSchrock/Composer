@@ -1,4 +1,9 @@
 <?php
+include('../database/conexao.php');
+
+$viewsLivros = $conn->prepare('SELECT * FROM livros');
+$viewsLivros->execute();
+$rowTable = $viewsLivros ->fetchAll();
  ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -7,11 +12,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/inicial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
     <title>Tela Inicial</title>
 </head>
 <body>
     <div class="container">
-        <h1 id="Titulo">Seja Muito Bem-vindo a Nossa Livraria</h1>
+        <h1 id="Titulo">Sistema Organizacional da Biblioteca</h1>
         <div>
             <a href="../views/CadastroLIvros.php"><button id="Comprar" type="submit" class="btn">Cadastrar</button></a>
         </div>

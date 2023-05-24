@@ -1,4 +1,9 @@
 <?php
+include('../database/conexao.php');
+
+$viewsLivros = $conn->prepare('SELECT * FROM livros');
+$viewsLivros->execute();
+$rowTable = $viewsLivros ->fetchAll();
  ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -14,16 +19,18 @@
     <title>Tela de Cadastro</title>
 </head>
 <body>
+<a href="../views/telaDeRelatorios.php"><button type="submit" value="Cadastrar" name="storeEbooks">Acessar Livros</button></a>
 <h1 id="Titulo">Cadastro De Livros</h1>
 <div class="container">
-       <form class="label" action="">
-       <label><input type="text"  name="Nome" placeholder="Nome" required="name"/></label>
-       <label><input type="text"  name="Classificacao" placeholder="Classificacao" required="name"/></label>
-       <label><input type="num" name="Preço" placeholder="Preco" required=""  /></label>  
-       <label><input type="num" name="Preço" placeholder="Preco"  required=""/></label>    
-  
+       <form class="label" method="POST"  action="../controllers/ebooksControllers.php">
+       <input type="text" name="nome" class="input" placeholder="Nome" required>
+        <input type="text" name="classificacao" class="input" placeholder="Classificacao" required>
+        <input type="number" name="preco" class="input" placeholder="Preço" required>
+        <input type="number" name="quantidade" class="input" placeholder="Quantidade" required>
+
+        <button class="botao" type="submit" value="Cadastrar" name="storeEbooks">Cadastrar</button>
     </form>
-    <button id="Comprar" type="submit" class="btn">Cadastrar</button>
+
     </div>
 </body>
 </html>
