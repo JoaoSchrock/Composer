@@ -1,5 +1,8 @@
 body{
-    background-color: blanchedalmond;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .container{
 
@@ -13,17 +16,20 @@ body{
 #Comprar{
     position: absolute;
     left: 75vh;
-    margin-top: -25vh;
-    color: darkseagreen;
-    background-color: rgb(76, 95, 76);
+    margin-top: -10vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,102,121,1) 35%, rgba(0,212,255,1) 100%);    background-color: rgb(76, 95, 76);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50vh;
     height: 5vh;
+    border-radius: 20px;
 }
 #Titulo{
-    margin-top: -80vh;
+    margin-top: -70vh;
     font-size: 15vh;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Playfair', serif;
+    font-family: 'Roboto', sans-serif;
+    color: antiquewhite;
 }
