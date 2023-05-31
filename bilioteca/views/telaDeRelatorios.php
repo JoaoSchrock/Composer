@@ -17,11 +17,11 @@ $rowTable = $viewsLivros ->fetchAll();
 </head>
 <body>
     <div class="container">
-    <a href="../views/CadastroLIvros.php"><button type="submit" value="Cadastrar" name="storeEbooks">Voltar</button></a>
+    <a href="../views/CadastroLIvros.php"><img id="voltar" src="../img/voltar.png" alt=""></a>
     <table class="table">
-        <h1 id="titulo">PRODUTOS</h1>
+        <h1 id="titulo">LIVROS</h1>
     <thead>
-                    <tr class="fonttable">
+                    <tr>
                         <th>Nome</th>
                         <th>Preco</th>
                         <th>Classificacao</th>
@@ -39,8 +39,9 @@ $rowTable = $viewsLivros ->fetchAll();
                 echo '<td>'.$linha['preco'].'</td>';
                 echo '<td>'.'<h1></h1>'.$linha['classificacao'].'</td>';
                 echo '<td>'.'<h1></h1>'.$linha['quantidade'].'</td>';
-                echo "<td><a class='btn btn-success'>Comprar</a></td>";
+                echo '<td><a href=../controllers/deleteControllers.php?mensagem=' . $linha['id'] . ' class="btn compras">Comprar</a></td>';
             }
+            
         ?>
     </tbody>
     </table>

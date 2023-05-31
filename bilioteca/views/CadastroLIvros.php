@@ -19,7 +19,7 @@ $rowTable = $viewsLivros ->fetchAll();
     <title>Tela de Cadastro</title>
 </head>
 <body>
-<a href="../views/telaDeRelatorios.php"><button type="submit" value="Cadastrar" name="storeEbooks">Acessar Livros</button></a>
+<a href="../views/telaDeRelatorios.php"><button type="submit" value="Cadastrar" name="storeEbooks"><img id="voltar" src="../img/voltar.png" alt=""></button></a>
 <h1 id="Titulo">Cadastro De Livros</h1>
 <div class="container">
        <form class="label" method="POST"  action="../controllers/ebooksControllers.php">

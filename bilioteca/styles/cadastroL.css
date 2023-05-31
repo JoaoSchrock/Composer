@@ -47,5 +47,12 @@ body{
     outline: none;
     left: 75vh;
 }
+#voltar{
+    position: relative;
+    background-color: aliceblue;
+    size: 10px;
+    left: -310px;
+    margin-top: 2px;
+}
 
 

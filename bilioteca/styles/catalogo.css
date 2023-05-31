@@ -1,0 +1,63 @@
+body{
+    background-color: mediumvioletred;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+.back_img{
+    position: relative;
+    width: 200px;
+    height: 100px;
+
+}
+.livro1{
+    position: relative;
+    margin-top: -61.5vh;
+    left: 57vh;
+}
+
+.livro2{
+    position: relative;
+    margin-top: -2vh;
+    left: 82vh;
+}
+
+.livro3{
+    position: relative;
+    margin-top: -2.5vh;
+    left: 70vh;
+}
+
+.livro4{
+    position: relative;
+    margin-top: -2vh;
+    left: 95vh;
+}
+
+.livro5{
+    position: relative;
+    margin-top: -2vh;
+    left: 106vh;
+}
+
+.livro6{
+    position: relative;
+    margin-top: -2vh;
+    left: 118vh;
+}
+
+#container2{
+    width: 100px;
+    background-color: blue;
+}

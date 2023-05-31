@@ -1,11 +1,25 @@
 body{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
-.fonttable{
-    width: 100%;
-    height: 100%;
-}
+
 #titulo{
     font-size: 10vh;
+    color: rgb(255, 255, 255);
+}
+.thead{
     color: antiquewhite;
+}
+tr{
+    color:aliceblue;
+    border: transparent;
+}
+.compras{
+    background-color: aquamarine;
+}
+#voltar{
+    position: relative;
+    background-color: aliceblue;
+    size: 10px;
+    left: -310px;
+    margin-top: 2px;
 }

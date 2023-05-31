@@ -14,6 +14,6 @@ $rowTable = $viewsLivros ->fetchAll();
     <title>Tela de Compras</title>
 </head>
 <body>
-    
+    <a href="../views/telaDeRelatorios.php"></a>
 </body>
 </html>
